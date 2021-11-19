@@ -1,0 +1,25 @@
+<h1>BEST Albums</h1>
+
+<table>
+  <tr>
+    <th>Artist</th>
+    <th>Album</th>
+    <th>Label</th>
+    <th>Year</th>
+    <th>Reviewer</th>
+    <th>Review_date</th>
+    <th>Score</th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.artist %></td>
+    <td><%= article.album %></td>
+    <td><%= article.label %></td>
+    <td><%= article.year %></td>
+    <td><%= article.reviewer %></td>
+    <td><%= article.review_date %></td>
+    <td><%= article.score %></td>
+  </tr>
+<% end %>
+</table>
