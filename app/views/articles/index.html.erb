@@ -13,7 +13,9 @@
 
 <% @articles.each do |article| %>
   <tr>
-    <td><%= article.artist %></td>
+    <td>
+      <%= link_to article.artist, article %>
+    </td>
     <td><%= article.album %></td>
     <td><%= article.label %></td>
     <td><%= article.year %></td>
@@ -23,3 +25,5 @@
   </tr>
 <% end %>
 </table>
+<br>
+<%= link_to "New Album", new_article_path %>
