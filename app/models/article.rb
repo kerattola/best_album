@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  validates :article, presence: true
+  validates :artist, presence: true
   validates :album, presence: true
   validates :label, presence: true
   validates :year, presence: true
