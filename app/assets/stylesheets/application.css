@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+th {
+  background-color: #96D4D4;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+h1 {
+  background-color: #96D4D4;
+}
+
+body {
+  background-color: #F4E7FB;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #96D4D4;}

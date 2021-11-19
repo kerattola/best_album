@@ -7,8 +7,8 @@
 <p><%= @article.score %></p>
 
 <ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
+ <button class="button button1"><%= link_to "Edit", edit_article_path(@article) %></button>
+ <button class="button button1"><%= link_to "Destroy", article_path(@article),
                   method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
+                  data: { confirm: "Are you sure?" } %></button>
 </ul>
