@@ -1,5 +1,7 @@
 <h1>BEST Albums</h1>
 
+<button class="button button1"><%= link_to "Albums", albums_path %></button>
+
 <table>
   <tr>
     <th>Artist</th>
@@ -8,22 +10,19 @@
     <th>Year</th>
     <th>Reviewer</th>
     <th>Review_date</th>
-    <th>Score</th>
   </tr>
 
 <% @articles.each do |article| %>
   <tr>
-    <td>
-      <%= link_to article.artist, article %>
-    </td>
-    <td><%= article.album %></td>
+    <td><%= link_to article.artist.name, article %></td>
+    <td><%= article.album.title %></td>
     <td><%= article.label %></td>
     <td><%= article.year %></td>
     <td><%= article.reviewer %></td>
     <td><%= article.review_date %></td>
-    <td><%= article.score %></td>
   </tr>
 <% end %>
 </table>
+
 <br>
-<button class="button button1"><%= link_to "New Album", new_article_path %></button>
+<!-- <button class="button button1"><%= link_to "New Album", new_article_path %></button> -->

@@ -1,3 +1,35 @@
-<h1>New Album</h1>
+<%= form_with model: [@article, @article.albums.build] do |form| %>
+  <div>
+    <%= form.label :artist %><br>
+    <%= form.text_field :artist%>
+  </div>
 
-<%= render "form", article: @article %>
+  <div>
+    <%= form.label :album %><br>
+    <%= form.text_area :album%>
+  </div>
+
+  <div>
+    <%= form.label :label %><br>
+    <%= form.text_area :label %>
+  </div>
+
+  <div>
+    <%= form.label :year %><br>
+    <%= form.text_area :year %>
+  </div>
+
+  <div>
+    <%= form.label :reviewer %><br>
+    <%= form.text_area :reviewer %>
+  </div>
+
+  <div>
+    <%= form.label :review_date %><br>
+    <%= form.text_area :review_date %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

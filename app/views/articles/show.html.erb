@@ -1,14 +1,14 @@
-<h1><%= @article.artist %></h1>
+<h1><%= @article.artist.name %></h1>
 
-<p><%= @article.album %></p>
+<p><%= @article.album.title %></p>
 <p><%= @article.year %></p>
 <p><%= @article.reviewer %></p>
 <p><%= @article.review_date %></p>
-<p><%= @article.score %></p>
+<p><%= @article.album.score.number %></p>
 
 <ul>
- <button class="button button1"><%= link_to "Edit", edit_article_path(@article) %></button>
+ <!-- <button class="button button1"><%= link_to "Edit", edit_article_path(@article) %></button>
  <button class="button button1"><%= link_to "Destroy", article_path(@article),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></button>
-</ul>
+</ul>  -->
