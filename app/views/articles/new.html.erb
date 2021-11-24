@@ -1,12 +1,12 @@
-<%= form_with model: [@article, @article.albums.build] do |form| %>
+<%= form_with model: @article do |form| %>
   <div>
-    <%= form.label :artist %><br>
-    <%= form.text_field :artist%>
+    <%= form.label :artist_id %><br>
+    <%= form.text_field :artist_id %>
   </div>
 
   <div>
-    <%= form.label :album %><br>
-    <%= form.text_area :album%>
+    <%= form.label :album_id %><br>
+    <%= form.text_area :album_id %>
   </div>
 
   <div>

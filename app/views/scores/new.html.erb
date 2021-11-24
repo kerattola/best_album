@@ -1,0 +1,10 @@
+<%= form_with model: @score do |form| %>
+  <div>
+    <%= form.label :number %><br>
+    <%= form.text_area :number %>
+  </div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

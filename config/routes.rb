@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
  resources :articles
  resources :albums
- resources :score
+ resources :scores
+ resources :artists
 end

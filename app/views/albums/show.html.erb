@@ -3,3 +3,10 @@
 <p><%= @album.title %></p>
 
 <p><%= @album.score.number %></p>
+<ul>
+<button class="button button1"><%= link_to "Destroy", album_path(@album),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></button>
+</ul> 
+
+<button class="button button1"><%= link_to "back", albums_path %></button>

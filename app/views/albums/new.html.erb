@@ -1,0 +1,15 @@
+<%= form_with model: @album do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_area :title %>
+  </div>
+
+  <div>
+    <%= form.label :score_id %><br>
+    <%= form.text_area :score_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

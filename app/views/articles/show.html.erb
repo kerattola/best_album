@@ -7,8 +7,9 @@
 <p><%= @article.album.score.number %></p>
 
 <ul>
- <!-- <button class="button button1"><%= link_to "Edit", edit_article_path(@article) %></button>
+ <!-- <button class="button button1"><%= link_to "Edit", edit_article_path(@article) %></button> -->
  <button class="button button1"><%= link_to "Destroy", article_path(@article),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></button>
-</ul>  -->
+</ul> 
+<button class="button button1"><%= link_to "back", articles_path %></button>
