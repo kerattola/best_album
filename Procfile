@@ -1,1 +1,0 @@
-worker: ruby telegram/bot.rb
