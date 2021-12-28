@@ -1,2 +1,1 @@
-web: bin/rails server
-bot: ruby telegram/bot.rb
+worker: ruby telegram/bot.rb
